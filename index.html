@@ -13,7 +13,14 @@
     <!-- Fonts awesome -->
     <script src="https://kit.fontawesome.com/4629e31c97.js" crossorigin="anonymous"></script>
 
+    <style>
+        body {
+            background-color: rgb(230, 230, 223)
+        }
+    </style>
+
     <title>Pabandom</title>
+
 </head>
 
 <body>
@@ -42,6 +49,22 @@
                         Write a message:<br>
                         <input type="text" onkeydown="color('pink')" onkeyup="color('white')" name="myInput">
                     </form>
+                    <hr>
+                </div>
+
+                <div>
+                    <p>Click the button to trigger a function.</p>
+                    <button class="btn btn-dark mt-2" onclick="myFunction()">Click me</button>
+                    <p id="demo" class="mt-2"></p>
+                    <hr>
+                </div>
+
+                <div onmousedown="coordinates(event)">
+                    <p>
+                        Click this paragraph, to display the x and y coordinates of the cursor, relative to the screen.
+                    </p>
+
+                    <p id="my_demo"></p>
                 </div>
             </div>
         </div>

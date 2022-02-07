@@ -24,4 +24,10 @@ function whichElement(e) {
     document.forms[0].myInput.style.background = color;
   }
 
-//   onmousedown="whichElement(event)"
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
+
+  function coordinates(event) {
+    document.getElementById("my_demo").innerHTML = "X = " + event.screenX + "<br>Y = " + event.screenY;
+  }
